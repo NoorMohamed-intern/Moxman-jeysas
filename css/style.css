@@ -48,7 +48,7 @@ header {
   border-color: blueviolet;
   border-radius: 50px;
 } */
-button {
+button[type="submit"] {
   background: rgb(28, 101, 177);
   border: 0;
   padding: 12px 34px;
@@ -56,10 +56,10 @@ button {
   border-radius: 50px;
   text-decoration: none;
 }
-button:hover {
+button:hover[type="submit"] {
   background: rgb(46, 49, 146);
 }
-button a {
+button[type="submit"] a {
   text-decoration: none !important;
   color: #fff !important;
   font-weight: bold;

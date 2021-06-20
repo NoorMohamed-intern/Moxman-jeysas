@@ -215,6 +215,8 @@
                         type="radio"
                         class="form-check-input"
                         name="optradio"
+                        data-toggle="modal"
+                        data-target="#exampleModal"
                       />Ocean Freight
                     </label>
                   </div>
@@ -369,6 +371,73 @@
         </form>
       </div>
     </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Sea freight container loads
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label>Select option</label>
+                <select
+                  class="form-control"
+                  aria-label="Default select example"
+                >
+                  <option hidden>Select</option>
+                  <option value="1">20FT GP</option>
+                  <option value="2">40FT GP</option>
+                  <option value="3">20FT OPEN TOP</option>
+                  <option value="4">40FT OPEN TOP</option>
+                  <option value="5">20FT REEFER</option>
+                  <option value="6">40FT REEFER</option>
+                  <option value="7">40FT HIGH CUBE</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <!-- <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button> -->
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="call">
+      <form>
+        <div class="pole1" id="Field1Id"><h2>HI</h2></div>
+        <div class="pole2" id="Field2Id">Field 2</div>
+      </form>
+    </div> -->
+
     <footer></footer>
 
     <!-- CHECKBOX 
@@ -419,5 +488,12 @@
     <script>
       $("#year").text(new Date().getFullYear());
     </script>
+
+    <!-- <script>
+      function myFunction1() {
+        $("#Field1Id").hide();
+        $("#Field2Id").hide();
+      }
+    </script> -->
   </body>
 </html>
