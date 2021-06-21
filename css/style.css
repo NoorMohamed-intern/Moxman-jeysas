@@ -48,6 +48,16 @@ header {
   font-weight: 400;
 }
 
+.final-text p {
+  font-family: "Alegreya Sans";
+  font-weight: regular;
+  font-size: 20px;
+  line-height: 1.7;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #1a5dab;
+}
+
 /* form button {
   background-color: blanchedalmond !important;
   border-color: blueviolet;
