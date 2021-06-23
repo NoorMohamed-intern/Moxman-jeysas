@@ -4,6 +4,10 @@
   font-family: "Alegreya Sans", sans-serif;
 }
 
+body {
+  padding-bottom: 0;
+}
+
 header {
   height: 106px;
 }
@@ -179,7 +183,20 @@ button:hover[type="submit"] {
 }
 
 .moxman-text {
-  background-color: blue;
+  background-color: #034177;
+  min-height: 39px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
+.moxman-text a {
+  color: #fff;
+  outline: #fff;
 }
 
 footer {
