@@ -69,13 +69,120 @@ button[type="submit"] {
   padding: 12px 34px;
   transition: 0.4s;
   border-radius: 50px;
-  text-decoration: none;
+  text-decoration: none !important;
+  color: #fff !important;
+  font-weight: bold;
 }
 button:hover[type="submit"] {
   background: rgb(46, 49, 146);
 }
-button[type="submit"] a {
-  text-decoration: none !important;
+
+/* Header Classes */
+#request-header nav {
+  background-color: #fff !important;
+}
+
+.nav-link.active {
+  color: #fac033 !important;
+}
+
+#request-header li {
+  height: auto;
+  line-height: 60px;
+  font-family: "Alegreya Sans";
+
+  font-size: 21px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #1a5dab;
+}
+
+#request-header a {
+  padding: 0 12px;
+  font-weight: 700;
+  font-size: 21px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #1a5dab;
+  height: auto;
+  line-height: 60px;
+  font-family: "Alegreya Sans";
+}
+
+.navbar-nav button {
+  background: #352c66;
+  color: #ffffff !important;
+  /* display: inline-block !important; */
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.navbar-nav button:hover {
+  background: #352c66;
+  color: #ffffff !important;
+}
+
+.navbar-nav button a {
+  color: #ffffff !important;
+  text-decoration: none;
+  line-height: 40px !important;
+}
+
+.dropdown-item {
   color: #fff !important;
-  font-weight: bold;
+  background-color: #1a5dab;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  text-decoration: none;
+}
+
+/* Request-footer */
+#request-footer {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  background-color: #023868;
+}
+
+#request-footer h4 {
+  color: white;
+}
+#request-footer hr {
+  background-color: white !important;
+  width: 20px;
+  height: 1px;
+  margin: 18px 0 20px 0;
+}
+.second-text {
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #fff;
+}
+
+#request-footer li {
+  list-style-type: none;
+  padding-top: 5px;
+}
+
+#request-footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0;
+  padding: 4px 0 4px 0;
+}
+
+.third-text {
+  color: #fff;
+}
+
+.moxman-text {
+  background-color: blue;
+}
+
+footer {
+  /* Selects text inside a <p> tag that is inside a .footer <div> */
+  margin-bottom: 0; /* removes default <p> tag margin from the bottom */
 }

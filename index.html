@@ -21,9 +21,94 @@
   </head>
   <body>
     <!-- START HERE -->
-
-    <header></header>
-
+    <header id="request-header">
+      <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+        <div class="container">
+          <a href="#" class="navbar-brand"
+            ><img src="img/jeysas-Logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#userdefined"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            id="userdefined"
+            class="collapse navbar-collapse justify-content-end"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="https://jeysas.com/" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://jeysas.com/homepages/about-us/"
+                  class="nav-link"
+                  >About us</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  >Services</a
+                >
+                <div class="dropdown-menu">
+                  <a
+                    href="https://jeysas.com/homepages/warehousing/"
+                    class="dropdown-item"
+                    >Warehousing</a
+                  >
+                  <a
+                    href="https://jeysas.com/homepages/air-freight/"
+                    class="dropdown-item"
+                    >Air Freight</a
+                  >
+                  <a
+                    href="https://jeysas.com/homepages/air-freight/"
+                    class="dropdown-item"
+                    >Ocean Freight</a
+                  >
+                  <a
+                    href="https://jeysas.com/homepages/road-freight/"
+                    class="dropdown-item"
+                    >Road Freight</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link active">Request a Quote</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://jeysas.com/homepages/contact-us/"
+                  class="nav-link"
+                  >Contact us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="https://jeysas.com/company/blogs/" class="nav-link"
+                  >Blog</a
+                >
+              </li>
+              <div class="form-inline">
+                <button class="nav-item btn btn-primary mr-2">
+                  <a href="https://jeysas.com/homepages/track-form/">
+                    Tracking</a
+                  >
+                </button>
+                <button class="nav-item btn btn-primary">
+                  <a href="https://jeysas.com/wp-admin"> My jeysas </a>
+                </button>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <section id="all-forms">
       <div class="container">
         <div class="first-text">
@@ -34,15 +119,14 @@
           </p>
         </div>
         <form>
-          <div class="heading-title">
-            <h2>Commodity:</h2>
-          </div>
+          <div class="heading-title"><h2>Commodity:</h2></div>
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
                 <label>First Name</label>
                 <input
                   type="text"
+                  name="name"
                   class="form-control"
                   placeholder="Please enter your first name"
                 />
@@ -53,6 +137,7 @@
                 <label>Surname</label>
                 <input
                   type="text"
+                  name="surname"
                   class="form-control"
                   placeholder="Please enter your Surname"
                 />
@@ -65,6 +150,7 @@
                 <label>Company Name</label>
                 <input
                   type="text"
+                  name="companyname"
                   class="form-control"
                   placeholder="Please enter your Company name"
                 />
@@ -75,6 +161,7 @@
                 <label>Email</label>
                 <input
                   type="email"
+                  name="email"
                   class="form-control"
                   placeholder="Please enter your Email address"
                 />
@@ -87,6 +174,7 @@
                 <label>Telephone</label>
                 <input
                   type="number"
+                  name="telephone"
                   class="form-control"
                   placeholder="Please enter your Telephone number"
                 />
@@ -97,6 +185,7 @@
                 <label>Fax</label>
                 <input
                   type="number"
+                  name="fax"
                   class="form-control"
                   placeholder="Please enter your Fax number"
                 />
@@ -107,44 +196,54 @@
             <div class="col-md-12">
               <div class="form-group">
                 <label>Address</label>
-                <!-- <input type="text" class="form-control" /> -->
+                <!--<input type="text" class="form-control" /> -->
                 <textarea
                   class="form-control"
                   placeholder="Please enter your company address"
+                  name="message"
                 ></textarea>
               </div>
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <input type="text" placeholder="State" class="form-control" />
+                <input
+                  type="text"
+                  name="state"
+                  placeholder="State"
+                  class="form-control"
+                />
               </div>
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <input type="text" placeholder="City" class="form-control" />
+                <input
+                  type="text"
+                  name="city"
+                  placeholder="City"
+                  class="form-control"
+                />
               </div>
             </div>
             <div class="col-md-4">
               <div class="form-group">
                 <input
                   type="number"
+                  name="zipcode"
                   placeholder="Zipcode"
                   class="form-control"
                 />
               </div>
             </div>
           </div>
-
           <div class="mt-4">
-            <div class="heading-title">
-              <h2>Origin:</h2>
-            </div>
+            <div class="heading-title"><h2>Origin:</h2></div>
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
                   <label>Country</label>
                   <input
                     type="text"
+                    name="country1"
                     class="form-control"
                     placeholder="Please enter your Country"
                   />
@@ -153,6 +252,7 @@
                   <label>City</label>
                   <input
                     type="text"
+                    name="city1"
                     class="form-control"
                     placeholder="Please enter your City"
                   />
@@ -161,6 +261,7 @@
                   <label>Postcode</label>
                   <input
                     type="number"
+                    name="postcode1"
                     class="form-control"
                     placeholder="Please enter your Postcode"
                   />
@@ -169,25 +270,27 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label>Total no of pieces</label>
-                  <input type="text" class="form-control" />
+                  <input type="text" name="totalpieces" class="form-control" />
                 </div>
                 <div class="form-group">
                   <label>Select option</label>
                   <select
                     class="form-control"
                     aria-label="Default select example"
+                    name="packingtype"
                   >
                     <option hidden>Choose Packing Type</option>
-                    <option value="1">PACKAGES</option>
-                    <option value="2">CARTONS</option>
-                    <option value="3">PIECES</option>
-                    <option value="4">CRATES</option>
+                    <option value="packages">PACKAGES</option>
+                    <option value="cartons">CARTONS</option>
+                    <option value="pieces">PIECES</option>
+                    <option value="crates">CRATES</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label>Total Kg</label>
                   <input
                     type="number"
+                    name="totalkg"
                     class="form-control"
                     placeholder="In KILOGRAMS"
                   />
@@ -196,15 +299,15 @@
               <div class="col-md-12">
                 <div class="form-group">
                   <label style="display: block" class="mb-3 mt-2"
-                    >Fright Type</label
+                    >Freight Type</label
                   >
-                  <!-- <div class="form-control"> -->
                   <div class="form-check-inline mr-5">
                     <label class="form-check-label">
                       <input
                         type="radio"
                         class="form-check-input"
                         name="optradio"
+                        value="Air Freight"
                       />Air Freight
                     </label>
                   </div>
@@ -214,6 +317,7 @@
                         type="radio"
                         class="form-check-input"
                         name="optradio"
+                        value="Ocean Freight"
                         data-toggle="modal"
                         data-target="#exampleModal"
                       />Ocean Freight
@@ -225,6 +329,7 @@
                         type="radio"
                         class="form-check-input"
                         name="optradio"
+                        value="Road Freight"
                       />Road Freight
                     </label>
                   </div>
@@ -234,6 +339,7 @@
                         type="radio"
                         class="form-check-input"
                         name="optradio"
+                        value="Warehouse"
                       />WareHouse
                     </label>
                   </div>
@@ -243,24 +349,23 @@
                         type="radio"
                         class="form-check-input"
                         name="optradio"
+                        value="Not Decided Yet"
                       />Not Decided yet
                     </label>
                   </div>
-                  <!-- </div> -->
                 </div>
               </div>
             </div>
           </div>
           <div class="mt-4">
-            <div class="heading-title">
-              <h2>Destination:</h2>
-            </div>
+            <div class="heading-title"><h2>Destination:</h2></div>
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
                   <label>Country</label>
                   <input
                     type="text"
+                    name="country2"
                     class="form-control"
                     placeholder="Please enter your Country"
                   />
@@ -269,6 +374,7 @@
                   <label>City</label>
                   <input
                     type="text"
+                    name="city2"
                     class="form-control"
                     placeholder="Please enter your City"
                   />
@@ -277,6 +383,7 @@
                   <label>Postcode</label>
                   <input
                     type="number"
+                    name="postcode2"
                     class="form-control"
                     placeholder="Please enter your Postcode"
                   />
@@ -285,24 +392,33 @@
               <div class="col-md-4">
                 <div class="form-group">
                   <label>Length</label>
-                  <input type="number" class="form-control" placeholder="cm" />
                   <input
                     type="number"
+                    name="length1"
+                    class="form-control"
+                    placeholder="cm"
+                  />
+                  <input
+                    type="number"
+                    name="length2"
                     class="form-control mt-3"
                     placeholder="cm"
                   />
                   <input
                     type="number"
+                    name="length3"
                     class="form-control mt-3"
                     placeholder="cm"
                   />
                   <input
                     type="number"
+                    name="length4"
                     class="form-control mt-3"
                     placeholder="cm"
                   />
                   <input
                     type="number"
+                    name="length5"
                     class="form-control mt-3"
                     placeholder="cm"
                   />
@@ -311,24 +427,33 @@
               <div class="col-md-4">
                 <div class="form-group">
                   <label>Wide</label>
-                  <input type="number" class="form-control" placeholder="cm" />
                   <input
                     type="number"
+                    name="wide1"
+                    class="form-control"
+                    placeholder="cm"
+                  />
+                  <input
+                    type="number"
+                    name="wide2"
                     class="form-control mt-3"
                     placeholder="cm"
                   />
                   <input
                     type="number"
+                    name="wide3"
                     class="form-control mt-3"
                     placeholder="cm"
                   />
                   <input
                     type="number"
+                    name="wide4"
                     class="form-control mt-3"
                     placeholder="cm"
                   />
                   <input
                     type="number"
+                    name="wide5"
                     class="form-control mt-3"
                     placeholder="cm"
                   />
@@ -337,24 +462,33 @@
               <div class="col-md-4">
                 <div class="form-group">
                   <label>Height</label>
-                  <input type="number" class="form-control" placeholder="cm" />
                   <input
                     type="number"
+                    name="height1"
+                    class="form-control"
+                    placeholder="cm"
+                  />
+                  <input
+                    type="number"
+                    name="height2"
                     class="form-control mt-3"
                     placeholder="cm"
                   />
                   <input
                     type="number"
+                    name="height3"
                     class="form-control mt-3"
                     placeholder="cm"
                   />
                   <input
                     type="number"
+                    name="height4"
                     class="form-control mt-3"
                     placeholder="cm"
                   />
                   <input
                     type="number"
+                    name="height5"
                     class="form-control mt-3"
                     placeholder="cm"
                   />
@@ -371,9 +505,62 @@
                 >
               </h4>
             </div>
-            <button type="submit">
-              <a href="#">Submit</a>
-            </button>
+            <button type="submit">Submit</button>
+          </div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Sea freight container loads
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label>Select option</label>
+                    <select
+                      class="form-control"
+                      aria-label="Default select example"
+                      name="oceanmodal"
+                    >
+                      <option hidden>Select</option>
+                      <option value="20FT GP">20FT GP</option>
+                      <option value="40FT GP">40FT GP</option>
+                      <option value="20FT OPEN TOP">20FT OPEN TOP</option>
+                      <option value="40FT OPEN TOP">40FT OPEN TOP</option>
+                      <option value="20FT REEFER">20FT REEFER</option>
+                      <option value="40FT REEFER">40FT REEFER</option>
+                      <option value="40FT HIGH CUBE">40FT HIGH CUBE</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal" > Close </button> -->
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-dismiss="modal"
+                  >
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </form>
         <div class="final-text">
@@ -390,97 +577,90 @@
       </div>
     </section>
 
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Sea freight container loads
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
+    <footer id="request-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h4 class="first-font">
+              About
+              <hr />
+            </h4>
+            <div class="second-text">
+              <p>
+                Jeysas is a Logistic Operator and the industry leader in
+                shipping your cargo anywhere across the globe; covering all
+                modes of freight transportation.
+              </p>
+            </div>
           </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label>Select option</label>
-                <select
-                  class="form-control"
-                  aria-label="Default select example"
+          <div class="col-md-3">
+            <h4 class="first-font">
+              Quick menu
+              <hr />
+            </h4>
+            <div>
+              <li><a href="https://jeysas.com/">Home</a></li>
+              <li>
+                <a href="https://jeysas.com/homepages/about-us/">About us</a>
+              </li>
+              <li><a href="https://jeysas.com/">Services</a></li>
+              <li><a href="#">Request a Quote</a></li>
+              <li><a href="https://jeysas.com/blogs/">Blog</a></li>
+              <li>
+                <a href="https://jeysas.com/homepages/contact-us/">Contact</a>
+              </li>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h4 class="first-font">
+              Services
+              <hr />
+            </h4>
+            <div>
+              <li>
+                <a href="https://jeysas.com/homepages/warehousing/"
+                  >Warehousing</a
                 >
-                  <option hidden>Select</option>
-                  <option value="1">20FT GP</option>
-                  <option value="2">40FT GP</option>
-                  <option value="3">20FT OPEN TOP</option>
-                  <option value="4">40FT OPEN TOP</option>
-                  <option value="5">20FT REEFER</option>
-                  <option value="6">40FT REEFER</option>
-                  <option value="7">40FT HIGH CUBE</option>
-                </select>
-              </div>
-            </form>
+              </li>
+              <li>
+                <a href="https://jeysas.com/homepages/air-freight/"
+                  >Air Freight</a
+                >
+              </li>
+              <li>
+                <a href="https://jeysas.com/homepages/ocean-freight/"
+                  >Ocean Freight</a
+                >
+              </li>
+              <li>
+                <a href="https://jeysas.com/homepages/road-freight/"
+                  >Road Freight</a
+                >
+              </li>
+            </div>
           </div>
-          <div class="modal-footer">
-            <!-- <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button> -->
-            <button type="button" class="btn btn-primary" data-dismiss="modal">
-              Save changes
-            </button>
+          <div class="col-md-3">
+            <h4 class="first-font">
+              Quick Contact
+              <hr />
+            </h4>
+            <div class="third-text">
+              <p>Jeysas AG</p>
+              <p>Gewerbestrasse 5</p>
+              <p>6330 Cham/ZG</p>
+              <p>info@jeysas.com</p>
+              <p>+41 (0) 79 129 09 55</p>
+              <p>+41 (0) 41 260 14 06</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- <div id="call">
-      <form>
-        <div class="pole1" id="Field1Id"><h2>HI</h2></div>
-        <div class="pole2" id="Field2Id">Field 2</div>
-      </form>
-    </div> -->
-
-    <footer></footer>
-
-    <!-- CHECKBOX 
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-          <div class="input-group-text">
-              <input type="checkbox">
-          </div>
-      </div>
-      <input type="text" class="form-control">
-  </div>
-
-  <br>
-
-  RADIO
-  <div class="input-group mb-3">
-      <div class="input-group-prepend">
-          <div class="input-group-text">
-              <input type="radio">
-          </div>
-      </div>
-      <input type="text" class="form-control">
-  </div>
-!-->
-
+      <!-- <div class="moxman-text">
+        <div class="container">
+          <h2>hi</h2>
+        </div>
+      </div> -->
+    </footer>
     <!--DONT TOUCH THE CODE BELOW-->
     <!-- Jquery CDN -->
     <script
@@ -502,16 +682,8 @@
     ></script>
     <!--Ionicons-->
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-
     <script>
       $("#year").text(new Date().getFullYear());
     </script>
-
-    <!-- <script>
-      function myFunction1() {
-        $("#Field1Id").hide();
-        $("#Field2Id").hide();
-      }
-    </script> -->
   </body>
 </html>
